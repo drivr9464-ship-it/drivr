@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DRIVR — Für alle, die fürs Fahren leben.</title>
+<meta name="description" content="DRIVR ist die App für Autofans in der Schweiz, Deutschland und Österreich. Fahrten aufzeichnen, Gebiet erobern, Leute finden, die so fahren wie du.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --grund:   #07080D;
+    --flaeche: #11141C;
+    --linie:   #1E2430;
+    --text:    #E8EEF4;
+    --text-2:  #94A3B1;
+    --text-3:  #61707E;
+    --cyan:    #00D9FF;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--grund); color: var(--text);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  .huelle { max-width: 780px; margin: 0 auto; padding: 0 24px 96px; }
+
+  header { padding: 88px 0 56px; text-align: center; }
+  .wort {
+    font-family: Archivo, sans-serif; font-weight: 800;
+    font-size: clamp(48px, 13vw, 92px); letter-spacing: -.045em;
+    line-height: .95; margin: 0;
+    background: linear-gradient(100deg, var(--text) 30%, var(--cyan));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .claim { color: var(--text-2); font-size: 19px; margin: 18px 0 0; }
+  .was { color: var(--text-2); max-width: 56ch; margin: 34px auto 0; }
+
+  .stores { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 36px; }
+  .store {
+    display: inline-flex; align-items: center; gap: 9px;
+    border: 1px solid var(--linie); border-radius: 12px;
+    padding: 13px 22px; color: var(--text-3);
+    font-weight: 500; text-decoration: none; font-size: 15px;
+  }
+  .store span { font-size: 12px; color: var(--text-3); }
+
+  h2 {
+    font-family: Archivo, sans-serif; font-weight: 600;
+    font-size: 13px; letter-spacing: .18em; text-transform: uppercase;
+    color: var(--cyan); margin: 72px 0 8px;
+  }
+  .stand { color: var(--text-3); font-size: 13px; margin: 0 0 28px; }
+  .abschnitt { border-top: 1px solid var(--linie); padding: 22px 0; }
+  h3 { font-size: 17px; font-weight: 600; margin: 0 0 8px; }
+  .abschnitt p { color: var(--text-2); margin: 0; }
+
+  .impressum { border: 1px solid var(--linie); border-radius: 12px; padding: 24px; margin-top: 28px; }
+  .impressum p { margin: 0 0 6px; color: var(--text-2); }
+  .impressum a { color: var(--cyan); }
+  .offen { color: var(--text-3); font-size: 14px; margin-top: 14px; font-style: italic; }
+
+  nav { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 44px; }
+  nav a { color: var(--text-3); text-decoration: none; font-size: 14px; }
+  nav a:hover, nav a:focus-visible { color: var(--cyan); }
+  footer { margin-top: 72px; padding-top: 28px; border-top: 1px solid var(--linie); color: var(--text-3); font-size: 13px; text-align: center; }
+  a:focus-visible, .store:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+</style>
+</head>
+<body>
+<div class="huelle">
+  <header>
+    <h1 class="wort">DRIVR</h1>
+    <p class="claim">Für alle, die fürs Fahren leben.</p>
+    <p class="was">
+      Zeichne deine Fahrten auf und sieh sie als Recap. Erober Strasse für Strasse
+      dein Gebiet. Finde Leute in deiner Gegend, die so fahren wie du. Für die
+      Schweiz, Deutschland und Österreich.
+    </p>
+    <div class="stores">
+      <a class="store" href="#" aria-disabled="true">App Store <span>bald</span></a>
+      <a class="store" href="#" aria-disabled="true">Google Play <span>bald</span></a>
+    </div>
+    <nav>
+      <a href="#datenschutz">Datenschutz</a>
+      <a href="#nutzung">Nutzungsbedingungen</a>
+      <a href="#impressum">Impressum</a>
+      <a href="mailto:drivr9464@gmail.com">Support</a>
+    </nav>
+  </header>
+
+  <h2 id="datenschutz">Datenschutzerklärung</h2>
+  <p class="stand">Stand: 09. September 2026</p>
+  
+      <section class="abschnitt">
+        <h3>Verantwortlicher</h3>
+        <p>Verantwortlich für die Datenverarbeitung in DRIVR ist der Betreiber der App. Kontakt: drivr9464@gmail.com.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Welche Daten wir verarbeiten</h3>
+        <p>Bei der Registrierung: E-Mail-Adresse und Passwort (verschlüsselt). Im Profil: Nutzername, Anzeigename, optional Profilbild, Auto-Angaben und Fahrstil. Bei aktivem Live Drive: dein GPS-Standort. Im Chat: deine Nachrichten. Im Feed: von dir hochgeladene Fotos samt optionaler Beschreibung und Ortsangabe.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Rechtsgrundlage &amp; Zweck</h3>
+        <p>Die Verarbeitung erfolgt zur Bereitstellung der App-Funktionen (Vertragserfüllung, Art. 6 Abs. 1 lit. b DSGVO) sowie auf Basis deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), insbesondere für die Standortfreigabe. Die Einwilligung kannst du jederzeit widerrufen.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Standortdaten</h3>
+        <p>Dein Standort wird ausschließlich geteilt, wenn du den Live Drive Mode aktiv einschaltest – standardmäßig ist er aus. Du kannst jederzeit wieder unsichtbar werden; deine Position wird dann gelöscht. Beim Schließen der App wird der Live Drive Mode automatisch deaktiviert, sofern aktiviert.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Speicherung &amp; Server (Auftragsverarbeiter)</h3>
+        <p>Daten werden bei Supabase gespeichert. Empfohlen wird eine Server-Region in der EU (Frankfurt). Supabase ist als Auftragsverarbeiter tätig; ein Auftragsverarbeitungsvertrag (AVV/DPA) ist abzuschließen. Der Zugriff ist über Sicherheitsregeln (Row Level Security) auf berechtigte Nutzer beschränkt.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Externe Dienste</h3>
+        <p>Für Karten und Routenführung wird Google Maps / Google Directions verwendet. Dabei können Standort- und Nutzungsdaten an Google übertragen werden. Es gelten zusätzlich die Datenschutzbestimmungen von Google.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Speicherdauer</h3>
+        <p>Wir speichern deine Daten, solange dein Account besteht. Live-Standorte werden nur temporär gespeichert und beim Offline-Gehen entfernt. Bei Löschung deines Accounts werden deine personenbezogenen Daten unwiderruflich entfernt.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Deine Rechte</h3>
+        <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Deinen Account und alle zugehörigen Daten kannst du jederzeit selbst löschen: Profil → Konto → „Account löschen“. Zudem besteht ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde.</p>
+      </section>
+
+  <h2 id="nutzung">Nutzungsbedingungen</h2>
+  <p class="stand">Stand: 09. September 2026</p>
+  
+      <section class="abschnitt">
+        <h3>Anbieter</h3>
+        <p>DRIVR wird betrieben von Kevin Duranović, Schweiz. Kontakt: drivr9464@gmail.com.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Was DRIVR ist</h3>
+        <p>DRIVR ist eine App für Autobegeisterte: Profil und Garage, Aufzeichnung eigener Ausfahrten, Bestenlisten, Karten, Chat und Community-Funktionen. Die Nutzung ist freiwillig und kann jederzeit beendet werden.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Wer DRIVR nutzen darf</h3>
+        <p>Du musst mindestens 16 Jahre alt sein. Für einige Funktionen — insbesondere alles, was mit dem Führen eines Fahrzeugs zusammenhängt — brauchst du eine gültige Fahrerlaubnis. Pro Person ist ein Konto zulässig.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Sicherheit im Strassenverkehr</h3>
+        <p>Das ist der wichtigste Abschnitt. DRIVR fordert dich zu nichts auf, was gegen Verkehrsregeln verstösst, und misst nichts, was auf öffentlichen Strassen gemessen werden soll. Die Zeitmessung ist ausschliesslich für abgesperrte Strecken und Privatgelände gedacht; die App weist an jeder Messung darauf hin. Das Handy bedient beim Fahren der Beifahrer. Es gelten immer und ausnahmslos die Verkehrsregeln des Landes, in dem du dich befindest — sie stehen über allem, was diese App anzeigt oder anbietet.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Bestenlisten und Messungen</h3>
+        <p>Geschwindigkeiten, Zeiten und Strecken werden über den GPS-Empfänger deines Geräts ermittelt. Das sind Näherungswerte: Empfang, Wetter, Gerät und Umgebung beeinflussen sie. Sie taugen nicht als Nachweis — weder für dich noch gegen dich. Wir behalten uns vor, offensichtlich unmögliche oder manipulierte Einträge aus Bestenlisten zu entfernen.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Deine Inhalte</h3>
+        <p>Fotos, Texte, Autoangaben und alles andere, was du hochlädst, bleiben deine. Du räumst uns das Recht ein, sie innerhalb der App anzuzeigen, damit die App funktioniert — mehr nicht. Du sicherst zu, dass du die nötigen Rechte an dem hast, was du hochlädst, und dass du keine Rechte Dritter verletzt.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Was nicht geht</h3>
+        <p>Keine Beleidigungen, keine Belästigung, keine Aufrufe zu Straftaten, keine Inhalte, die Rechte anderer verletzen. Keine Aufnahmen von Personen ohne deren Einverständnis. Keine gefälschten Messungen. Keine Werbung ohne Absprache. Und nichts, was andere zu gefährlichem Fahren anstiftet. Verstösse können zur Sperrung führen.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Melden und Blockieren</h3>
+        <p>Jeder Beitrag, jede Nachricht und jedes Profil lässt sich melden; jede Person lässt sich blockieren. Meldungen werden geprüft, und was gegen diese Bedingungen verstösst, wird entfernt. Blockierte Personen findest du in den Einstellungen wieder und kannst sie dort auch wieder freigeben.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Abonnements</h3>
+        <p>DRIVR ist in der Grundfassung kostenlos. Kostenpflichtige Stufen werden über den App Store beziehungsweise Google Play abgerechnet und verlängern sich, bis du sie dort kündigst. Kündigung und Rückerstattung laufen über den jeweiligen Store, nicht über uns.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Verfügbarkeit</h3>
+        <p>Wir bemühen uns um einen laufenden Betrieb, schulden ihn aber nicht. Wartung, Störungen und Änderungen an Funktionen sind möglich. Für kostenpflichtige Zeiträume, die durch längere Ausfälle beeinträchtigt sind, findet sich eine Lösung.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Haftung</h3>
+        <p>Wir haften für Vorsatz und grobe Fahrlässigkeit sowie für Schäden an Leben, Körper und Gesundheit nach den gesetzlichen Vorschriften. Im Übrigen ist die Haftung beschränkt, soweit das Gesetz es zulässt. Ausdrücklich nicht: für dein Fahrverhalten, für Verkehrsverstösse, für Unfälle und für Schäden, die aus der Nutzung der App am Steuer entstehen. Diese Verantwortung liegt bei dir.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Konto beenden</h3>
+        <p>Du kannst dein Konto jederzeit in den Einstellungen löschen — Konto → Account löschen. Damit werden deine Daten entfernt, wie in der Datenschutzrichtlinie beschrieben. Wir können ein Konto sperren, wenn diese Bedingungen erheblich oder wiederholt verletzt werden.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Änderungen</h3>
+        <p>Diese Bedingungen können sich ändern, etwa wenn neue Funktionen dazukommen. Wesentliche Änderungen kündigen wir in der App an. Wer danach weiter nutzt, stimmt der neuen Fassung zu.</p>
+      </section>
+      <section class="abschnitt">
+        <h3>Anwendbares Recht</h3>
+        <p>Es gilt Schweizer Recht, soweit keine zwingenden Verbraucherschutzvorschriften deines Wohnsitzlandes entgegenstehen. Gerichtsstand ist St. Gallen, soweit gesetzlich zulässig.</p>
+      </section>
+
+  <h2 id="impressum">Impressum</h2>
+  <div class="impressum">
+    <p><strong>Kevin Duranović</strong></p>
+    <p>Schweiz</p>
+    <p><a href="mailto:drivr9464@gmail.com">drivr9464@gmail.com</a></p>
+    <p class="offen">Vollständige Anschrift wird mit dem Verkaufsstart ergänzt.</p>
+  </div>
+
+  <footer>© 2026 DRIVR · Kontakt: <a href="mailto:drivr9464@gmail.com" style="color:var(--cyan)">drivr9464@gmail.com</a></footer>
+</div>
+</body>
+</html>
