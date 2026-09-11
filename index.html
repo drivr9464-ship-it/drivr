@@ -56,7 +56,8 @@
   .stand { color: var(--text-3); font-size: 13px; margin: 0 0 28px; }
   .abschnitt { border-top: 1px solid var(--linie); padding: 22px 0; }
   h3 { font-size: 17px; font-weight: 600; margin: 0 0 8px; }
-  .abschnitt p { color: var(--text-2); margin: 0; }
+  /* pre-line: Die Texte aus der App tragen Zeilenumbrueche fuer Aufzaehlungen. */
+  .abschnitt p { color: var(--text-2); margin: 0; white-space: pre-line; }
 
   .impressum { border: 1px solid var(--linie); border-radius: 12px; padding: 24px; margin-top: 28px; }
   .impressum p { margin: 0 0 6px; color: var(--text-2); }
@@ -97,36 +98,53 @@
   <p class="stand">Stand: 11. September 2026</p>
   
       <section class="abschnitt">
-        <h3>Verantwortlicher</h3>
-        <p>Verantwortlich für die Datenverarbeitung in DRIVR ist der Betreiber der App. Kontakt: drivr9464@gmail.com.</p>
+        <h3>Verantwortlich</h3>
+        <p>Verantwortlich für DRIVR ist Kevin Duranović, Schweiz. Kontakt für alle Fragen zum Datenschutz: drivr9464@gmail.com.</p>
       </section>
       <section class="abschnitt">
-        <h3>Welche Daten wir verarbeiten</h3>
-        <p>Bei der Registrierung: E-Mail-Adresse und Passwort (verschlüsselt). Im Profil: Nutzername, Anzeigename, optional Profilbild, Auto-Angaben und Fahrstil. Bei aktivem Live Drive: dein GPS-Standort. Im Chat: deine Nachrichten. Im Feed: von dir hochgeladene Fotos samt optionaler Beschreibung und Ortsangabe.</p>
+        <h3>Welche Daten DRIVR verarbeitet</h3>
+        <p>Konto: E-Mail-Adresse und Passwort (nur verschlüsselt gespeichert).
+Profil: Nutzername, Anzeigename, Profilbild, Land und Region, deine Autos mit Fotos und Auspuff-Sound, dein Fahrstil (DRIVR DNA).
+Fahrten: Eine Aufzeichnung bleibt auf deinem Handy. An unseren Server gehen die gefahrenen Kilometer, deine XP, die eroberten Waben und Dragrace-Zeiten – die ganze Strecke nur, wenn du einen Recap teilst.
+Inhalte: Beiträge, Kommentare, Fotos, Routen, Ausfahrten, Crews, Inserate, Chat-Nachrichten, Meldungen und Support-Anfragen.
+Technik: ein Push-Schlüssel deines Geräts, damit wir dir Mitteilungen schicken können.</p>
       </section>
       <section class="abschnitt">
-        <h3>Rechtsgrundlage &amp; Zweck</h3>
-        <p>Die Verarbeitung erfolgt zur Bereitstellung der App-Funktionen (Vertragserfüllung, Art. 6 Abs. 1 lit. b DSGVO) sowie auf Basis deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), insbesondere für die Standortfreigabe. Die Einwilligung kannst du jederzeit widerrufen.</p>
+        <h3>Wofür und auf welcher Grundlage</h3>
+        <p>Wir verarbeiten deine Daten, um dir DRIVR bereitzustellen (Vertrag, Art. 6 Abs. 1 lit. b DSGVO). Den Standort nutzen wir nur mit deiner Erlaubnis (Einwilligung, Art. 6 Abs. 1 lit. a DSGVO); du kannst sie in den Systemeinstellungen jederzeit zurücknehmen. Für Sicherheit, Moderation und die Behebung von Fehlern stützen wir uns auf unser berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO). Für Nutzer in der Schweiz gilt das Datenschutzgesetz (DSG). Wir verkaufen deine Daten nicht und verfolgen dich nicht über andere Apps hinweg.</p>
       </section>
       <section class="abschnitt">
-        <h3>Standortdaten</h3>
-        <p>Dein Standort wird ausschließlich geteilt, wenn du den Live Drive Mode aktiv einschaltest – standardmäßig ist er aus. Du kannst jederzeit wieder unsichtbar werden; deine Position wird dann gelöscht. Beim Schließen der App wird der Live Drive Mode automatisch deaktiviert, sofern aktiviert.</p>
+        <h3>Standort</h3>
+        <p>DRIVR nutzt deinen Standort,
+• um deine Fahrten aufzuzeichnen – auf Wunsch auch bei gesperrtem Bildschirm und automatisch, sobald du losfährst. Dafür braucht es die Erlaubnis «Immer».
+• um dich zu Ausfahrten und Treffpunkten zu navigieren,
+• für King of the Streets: Die Waben, durch die du fährst, gehören danach dir,
+• um dir zu melden, wenn in deiner Nähe jemand live geht oder Hilfe braucht. Dafür speichern wir deine letzte Position, während die Karte offen ist, höchstens alle zwei Minuten.
+
+Für andere sichtbar sind nur: deine Position, solange du live bist (sie wird gelöscht, sobald du offline gehst), die Waben, die dir gehören, samt deinem Namen, und die Strecke eines Recaps, den du teilst. Deine letzte Position für Meldungen in der Nähe sieht kein anderer Nutzer.</p>
       </section>
       <section class="abschnitt">
-        <h3>Speicherung &amp; Server (Auftragsverarbeiter)</h3>
-        <p>Daten werden bei Supabase in der EU gespeichert (Region Frankfurt, eu-central-1). Supabase ist als Auftragsverarbeiter tätig. Der Zugriff ist über Sicherheitsregeln (Row Level Security) auf berechtigte Nutzer beschränkt.</p>
+        <h3>Wer deine Daten sieht</h3>
+        <p>Andere Nutzer sehen dein Profil, deine Autos, Beiträge, geteilten Recaps und Crews, deine Plätze in den Bestenlisten und – solange du es in den Einstellungen nicht abschaltest – deine DRIVR DNA, auch um dir ähnliche Fahrer vorzuschlagen. Chat-Nachrichten sehen nur die Teilnehmer des Chats. Zur Moderation, etwa nach einer Meldung, und zur Behebung von Fehlern kann der Betreiber Inhalte einsehen, auch Chat-Nachrichten.</p>
       </section>
       <section class="abschnitt">
-        <h3>Externe Dienste</h3>
-        <p>Für Karten und Routenführung wird Google Maps / Google Directions verwendet. Dabei können Standort- und Nutzungsdaten an Google übertragen werden. Es gelten zusätzlich die Datenschutzbestimmungen von Google.</p>
+        <h3>Dienstleister</h3>
+        <p>Für den Betrieb setzen wir diese Anbieter ein:
+• Supabase – Datenbank, Anmeldung und Dateispeicher. Die Server stehen in Frankfurt (EU).
+• Google – Karten auf Android (Google Maps), Routenberechnung und die Kartenbilder der Recaps. Dafür gehen Koordinaten an Google. Die E-Mails zur Anmeldung verschicken wir über Gmail.
+• Apple – Karten auf dem iPhone (Apple Maps).
+• Expo – Zustellung von Push-Mitteilungen und App-Updates.
+• Cloudinary – nur wenn du den Sound aus einem Video übernimmst: Das Video wird dorthin geschickt, damit die Tonspur herausgeschnitten wird.
+
+Einige dieser Anbieter verarbeiten Daten auch ausserhalb der Schweiz und der EU, insbesondere in den USA. Es gelten zusätzlich ihre eigenen Datenschutzbestimmungen.</p>
       </section>
       <section class="abschnitt">
         <h3>Speicherdauer</h3>
-        <p>Wir speichern deine Daten, solange dein Account besteht. Live-Standorte werden nur temporär gespeichert und beim Offline-Gehen entfernt. Bei Löschung deines Accounts werden deine personenbezogenen Daten unwiderruflich entfernt.</p>
+        <p>Wir speichern deine Daten, solange dein Konto besteht. Löschst du es, entfernen wir dein Profil, deine Inhalte, Nachrichten und die Dateien auf unserem Server sofort; aus den automatischen Sicherungskopien verschwinden sie nach spätestens 30 Tagen. Meldungen, die andere über dich gemacht haben, bewahren wir zur Moderation auf.</p>
       </section>
       <section class="abschnitt">
         <h3>Deine Rechte</h3>
-        <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Deinen Account und alle zugehörigen Daten kannst du jederzeit selbst löschen: Profil → Konto → „Account löschen“. Zudem besteht ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde.</p>
+        <p>Du kannst jederzeit Auskunft über deine Daten verlangen, sie berichtigen, löschen oder dir herausgeben lassen und der Verarbeitung widersprechen. Schreib dafür an drivr9464@gmail.com. Dein Konto löschst du selbst: Startseite → oben auf dein Profilbild → Einstellungen → «Account löschen». Beschweren kannst du dich beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) oder bei der Datenschutzbehörde deines Landes.</p>
       </section>
 
   <h2 id="nutzung">Nutzungsbedingungen</h2>
@@ -146,7 +164,7 @@
       </section>
       <section class="abschnitt">
         <h3>Sicherheit im Strassenverkehr</h3>
-        <p>Das ist der wichtigste Abschnitt. DRIVR fordert dich zu nichts auf, was gegen Verkehrsregeln verstösst, und misst nichts, was auf öffentlichen Strassen gemessen werden soll. Die Zeitmessung ist ausschliesslich für abgesperrte Strecken und Privatgelände gedacht; die App weist an jeder Messung darauf hin. Das Handy bedient beim Fahren der Beifahrer. Es gelten immer und ausnahmslos die Verkehrsregeln des Landes, in dem du dich befindest — sie stehen über allem, was diese App anzeigt oder anbietet.</p>
+        <p>Das ist der wichtigste Abschnitt. DRIVR fordert dich zu nichts auf, was gegen Verkehrsregeln verstösst, und misst nichts, was auf öffentlichen Strassen gemessen werden soll. Die Zeitmessung ist ausschliesslich für abgesperrte Strecken und Privatgelände gedacht; die App weist dich in jeder Sitzung vor der ersten Messung darauf hin. Das Handy bedient beim Fahren der Beifahrer. Es gelten immer und ausnahmslos die Verkehrsregeln des Landes, in dem du dich befindest — sie stehen über allem, was diese App anzeigt oder anbietet.</p>
       </section>
       <section class="abschnitt">
         <h3>Bestenlisten und Messungen</h3>
@@ -178,7 +196,7 @@
       </section>
       <section class="abschnitt">
         <h3>Konto beenden</h3>
-        <p>Du kannst dein Konto jederzeit in den Einstellungen löschen — Konto → Account löschen. Damit werden deine Daten entfernt, wie in der Datenschutzrichtlinie beschrieben. Wir können ein Konto sperren, wenn diese Bedingungen erheblich oder wiederholt verletzt werden.</p>
+        <p>Du kannst dein Konto jederzeit selbst löschen: Startseite → oben auf dein Profilbild → Einstellungen → «Account löschen». Damit werden deine Daten entfernt, wie in der Datenschutzerklärung beschrieben. Wir können ein Konto sperren, wenn diese Bedingungen erheblich oder wiederholt verletzt werden.</p>
       </section>
       <section class="abschnitt">
         <h3>Änderungen</h3>
